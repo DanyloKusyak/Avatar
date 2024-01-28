@@ -2,6 +2,7 @@ body {
     font-family: 'Inter';
     font-weight: 400;
 }
+
 :root {
     --main-text: #141414;
 }
@@ -18,4 +19,17 @@ div.container {
     width: 1032px;
     margin: 0 auto;
     outline: red solid;
+}
+
+.header {
+    height: 150px;
+    border-bottom: 3px solid #FFF;
+    background-image: 
+    linear-gradient(to right,
+    rgba(43, 74, 97, 0.87),
+    rgba(43, 74, 97, 0.87)),
+     url("../images/header_bgr.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
 }
