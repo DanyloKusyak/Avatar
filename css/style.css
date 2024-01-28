@@ -1,0 +1,21 @@
+body {
+    font-family: 'Inter';
+    font-weight: 400;
+}
+:root {
+    --main-text: #141414;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: normal;
+    font-style: normal;
+    color: var(--main-text);
+}
+
+div.container {
+    width: 1032px;
+    margin: 0 auto;
+    outline: red solid;
+}
