@@ -33,3 +33,6 @@ div.container {
     background-position: center center;
     background-size: 100% 100%;
 }
+.header-home-link img {
+height: 72px;
+}
