@@ -1,10 +1,8 @@
-body {
-    font-family: 'Inter';
-    font-weight: 400;
-}
-
 :root {
     --main-text: #141414;
+    --main-hover: #94CFFF;
+    --main-cyan: #26C7EA;
+    --main-blue: #0B0E66;
 }
 
 body {
@@ -13,6 +11,15 @@ body {
     line-height: normal;
     font-style: normal;
     color: var(--main-text);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 div.container {
@@ -24,15 +31,57 @@ div.container {
 .header {
     height: 150px;
     border-bottom: 3px solid #FFF;
-    background-image: 
-    linear-gradient(to right,
-    rgba(43, 74, 97, 0.87),
-    rgba(43, 74, 97, 0.87)),
-     url("../images/header_bgr.jpg");
+    background-image:
+        linear-gradient(to right,
+            rgba(43, 74, 97, 0.87),
+            rgba(43, 74, 97, 0.87)),
+        url("../images/header_bgr.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%;
+    display: flex;
+
 }
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .header-home-link img {
-height: 72px;
+    height: 72px;
+}
+
+.navigation-list {
+    display: flex;
+    column-gap: 40px;
+}
+
+.navigation-list-item a {
+    font-weight: 300;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 1.2;
+
+}
+
+.navigation-list-item a:hover {
+    color: var(--main-hover);
+    font-weight: 600;
+}
+
+.blue_btn {
+    border: solid var(--main-cyan) 2px;
+    color: var(--main-cyan);
+    background-color: var(--main-blue);
+    font-family: 'Headland One';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.25;
+    padding: 10px 40px;
+    border-top-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    display: inline-block;
+    text-align: center;
 }
