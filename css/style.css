@@ -5,12 +5,12 @@
   --main-blue: #0B0E66;
 }
 
-body {
+* {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  line-height: normal;
-  font-style: normal;
   color: var(--main-text);
+  margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -210,4 +210,62 @@ input:checked+.slider:before {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.message .container {
+  padding-top: 80px;
+  padding-bottom: 140px;
+  text-align: center;
+  background-image: url("../images/message_bird.png");
+  background-repeat: no-repeat;
+  background-position: bottom 9px center;
+}
+
+.message-title {
+  color: #0A3853;
+  font-size: 36px;
+  line-height: 1.22;
+  margin: 0;
+}
+
+.message-author {
+  margin-top: 16px;
+  margin-bottom: 0;
+  font-size: 24px;
+  color: #000000;
+  line-height: 1.2;
+
+}
+
+.trailer .container {
+  padding: 330px 0;
+  text-align: center;
+
+}
+
+.trailer {
+  background-image: url("../images/trailer_bgr.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #2e4c64;
+  background-size: cover;
+}
+
+.navi {
+  background-image: url("../images/navi_bgr.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #2e4c64;
+  background-size: cover;
+}
+
+.footer {
+
+  background-image: linear-gradient(to right,
+      rgba(43, 74, 97, 0.87),
+      rgba(43, 74, 97, 0.87)), url("../images/footer_bgr.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #2e4c64;
+  background-size: cover;
 }
