@@ -5,7 +5,7 @@
   --main-blue: #0B0E66;
 }
 
-* {
+body  {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   color: var(--main-text);
@@ -21,9 +21,14 @@ a {
   text-decoration: none;
   color: inherit;
 }
+p, h4, h6, ul, button, blockquote {
+  margin: 0;
+  padding: 0;
+}
 
 div.container {
-  width: 1032px;
+  width: 1062px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -162,6 +167,11 @@ input:checked+.slider:before {
   display: inline-block;
   text-align: center;
 }
+.trailer .blue_btn, .hero .blue_btn {
+  height: 80px;
+  border: solid var(--main-cyan) 3px;
+}
+
 
 .hero {
   background-image:
@@ -197,7 +207,7 @@ input:checked+.slider:before {
 .hero-text:nth-child(1) {
   background-image: url("../images/arrow_white.png");
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: bottom left 55px;
   padding-bottom: 40px;
 }
 
@@ -209,6 +219,7 @@ input:checked+.slider:before {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: flex-end;
 }
 
 .message .container {
@@ -233,6 +244,8 @@ input:checked+.slider:before {
   font-size: 24px;
   color: #000000;
   line-height: 1.2;
+  display: block;
+  font-style: normal;
 
 }
 
@@ -251,9 +264,7 @@ input:checked+.slider:before {
 }
 
 .navi {
-  background-image: linear-gradient(to right,
-      rgba(255, 255, 255, 0.34),
-      rgba(255, 255, 255, 0.34)), url("../images/navi_bgr.jpg");
+  background-image: url("../images/navi_bgr.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-color: #2e4c64;
@@ -287,7 +298,7 @@ input:checked+.slider:before {
   width: 320px;
   height: 240px;
   background-color: rgba(255, 255, 255, 0.7);
-  padding: 36px;
+  padding: 36px 0;
   font-family: 'Headland One';
   font-weight: 400;
   font-size: 24px;
@@ -348,18 +359,31 @@ input:checked+.slider:before {
 
 .footer-text {
   padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.footer-email  {
+  display: flex;
+  gap: 10px;
 }
 
 .footer-email span {
   width: 400px;
   display: inline-block;
-  overflow: hidden;
-  position: relative;
+ 
 }
-.footer-email span::after {
-  content:'- - - - - - - - - - - - - - - - - - - - -';
-  position: absolute;
-  padding-left: 5px;
+.line1 span {
+  background-image: url("../images/line1.png");
+  background-repeat: no-repeat;
+  background-position: center right;
+   
+}
+.line2 span {
+  background-image: url("../images/line2.png");
+  background-repeat: no-repeat;
+  background-position: center right;
+   
 }
 .footer-email,
 .footer-email span {
@@ -368,12 +392,11 @@ input:checked+.slider:before {
   color: #FFF;
   
 }
-.footer-email a{
-  position: absolute;
-}
+
 
 .footer-copyright {
   color: #FFF;
   font-size: 14px;
   line-height: 1.21;
+  padding-left: 260px;
 }
