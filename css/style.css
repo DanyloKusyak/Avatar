@@ -290,17 +290,15 @@ input:checked+.slider:before {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  column-gap: 35px;
   row-gap: 20px;
 }
 
 .navi-list-item {
-  width: 320px;
-  height: 240px;
   background-color: rgba(255, 255, 255, 0.7);
   padding: 36px 0;
   font-family: 'Headland One';
   font-weight: 400;
+  flex-basis: calc((100% - 70px) / 3);
   font-size: 24px;
   line-height: 1;
 }
