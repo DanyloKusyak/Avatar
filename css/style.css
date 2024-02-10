@@ -5,7 +5,7 @@
   --main-blue: #0B0E66;
 }
 
-body  {
+body {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   color: var(--main-text);
@@ -21,7 +21,13 @@ a {
   text-decoration: none;
   color: inherit;
 }
-p, h4, h6, ul, button, blockquote {
+
+p,
+h4,
+h6,
+ul,
+button,
+blockquote {
   margin: 0;
   padding: 0;
 }
@@ -154,7 +160,7 @@ input:checked+.slider:before {
 }
 
 .blue_btn {
-  border: solid var(--main-cyan) 2px;
+  border: 2px solid var(--main-cyan);
   color: var(--main-cyan);
   background-color: var(--main-blue);
   font-family: 'Headland One';
@@ -167,9 +173,11 @@ input:checked+.slider:before {
   display: inline-block;
   text-align: center;
 }
-.trailer .blue_btn, .hero .blue_btn {
+
+.trailer .blue_btn,
+.hero .blue_btn {
   height: 80px;
-  border: solid var(--main-cyan) 3px;
+  border: 3px solid var(--main-cyan);
 }
 
 
@@ -350,7 +358,7 @@ input:checked+.slider:before {
 .footer-img {
   width: 260px;
   height: 155px;
-  border-right: #FFF solid 2px;
+  border-right: 2px solid #FFF;
   display: flex;
   align-items: center;
 }
@@ -361,7 +369,8 @@ input:checked+.slider:before {
   flex-direction: column;
   row-gap: 20px;
 }
-.footer-email  {
+
+.footer-email {
   display: flex;
   gap: 10px;
 }
@@ -369,26 +378,29 @@ input:checked+.slider:before {
 .footer-email span {
   width: 400px;
   display: inline-block;
- 
+
 }
+
 .line1 span {
   background-image: url("../images/line1.png");
   background-repeat: no-repeat;
   background-position: center right;
-   
+
 }
+
 .line2 span {
   background-image: url("../images/line2.png");
   background-repeat: no-repeat;
   background-position: center right;
-   
+
 }
+
 .footer-email,
 .footer-email span {
   font-size: 20px;
   line-height: 1.2;
   color: #FFF;
-  
+
 }
 
 
