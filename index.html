@@ -12,6 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Headland+One&family=Inter:wght@300;400;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal.style.css">
     <title>Avatar</title>
 </head>
 
@@ -67,7 +68,7 @@
                     твоє тіло залишається,
                     щоб стати частиною Народу.
                     Борись разом з нами!</p>
-                <a href="#" class="blue_btn">Приєднатися до <br>клану</a>
+                <a href="#" class="blue_btn" data-open-form-modal>Приєднатися до <br>клану</a>
             </div>
             <div class="hero-content-right">
                 <ul class="hero-social-list">
@@ -205,6 +206,30 @@
         </div>
         <p class="footer-copyright">©2023 Avatar: The Way Of Water. All rights reserved</p>
     </footer>
+    <div class="backdrop is-hidden" data-form-backdrop>
+        <form class="modal">
+
+            <div class="modal-close" data-close-form-modal>
+                <svg class="icon" width="11" height="11">
+                    <use href="./images/icons/symbol-defs.svg#icon-modal_close"> </use>
+                </svg>
+            </div>
+    
+            <label class="modal-label"> Ім'я
+                <input type="text" class="modal-input">
+            </label>
+
+            </label>
+            <label class="modal-label"> Email
+                <input type="text" class="modal-input">
+            </label>
+            <div class="modal-button">
+                <button class="blue_btn" data-modal-close>Приєднатися до<br> клану</button>
+            </div>
+          
+        </form>
+    </div>
+    <script src="./js/script.js"></script>
 
 
 </body>
