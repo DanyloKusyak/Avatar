@@ -1,6 +1,7 @@
 const refsForm = {
     openModalBtnForm: document.querySelector("[data-open-form-modal]"),
-    closeModalBtnForm: document.querySelector("[data-close-form-modal]"),
+    closeModalBtnForm: document.querySelector("[data-close-form-modal]"),   
+    sendModalBtnForm: document.querySelector("[data-close-form-modal-send]"),
     backdropForm: document.querySelector("[data-form-backdrop]"),
   };
   // const refsInfo = {
@@ -11,6 +12,7 @@ const refsForm = {
 // form-modal
   refsForm.openModalBtnForm.addEventListener("click", toggleModalForm);
   refsForm.closeModalBtnForm.addEventListener("click", toggleModalForm);
+  refsForm.sendModalBtnForm.addEventListener("click", toggleModalForm);
   refsForm.backdropForm.addEventListener("click", logBackdropClickForm);
 
   function toggleModalForm() {
@@ -22,6 +24,7 @@ const refsForm = {
     else{
       document.body.style.overflow = 'hidden';
     }
+    
   }
 
   function logBackdropClickForm() {
