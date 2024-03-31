@@ -16,12 +16,12 @@ refsForm.backdropForm.addEventListener("click", logBackdropClickForm);
 function toggleModalForm() {
   refsForm.backdropForm.classList.toggle("is-hidden");
   
-  if(document.body.style.overflow == 'hidden'){
-    document.body.style.overflow = 'visible';
-  }
-  else{
-    document.body.style.overflow = 'hidden';
-  }
+  // if(document.body.style.overflow == 'hidden'){
+  //   document.body.style.overflow = 'visible';
+  // }
+  // else{
+  //   document.body.style.overflow = 'hidden';
+  // }
 }
 
 function logBackdropClickForm() {
