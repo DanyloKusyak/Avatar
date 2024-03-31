@@ -6,6 +6,9 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal {
@@ -38,6 +41,8 @@
     justify-content: center;
     cursor: pointer;
     fill: var(--main-blue);
+    background-color: transparent;
+    border: none;
 }
 
 .modal-close:hover svg {
@@ -78,4 +83,29 @@ label.modal-label:has(input:focus) svg {
 
 .is-hidden {
     display: none;
+}
+/* info-modal */
+.info-modal {
+    position: fixed;
+    width: 600px;
+    padding: 56px 112px 184px;
+    background-color: var(--main-blue);
+    background-image: url("../images/modal-info-bg.jpg");
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-size: cover;
+    z-index: 12;
+}
+.modal-close-svg {
+    fill: var(--main-white);
+}
+.info-modal-title, .info-modal-text  {
+color: var(--main-white);
+font-weight: 400;
+font-size: 24px;
+text-align: center;
+}
+.info-modal-title {
+    margin-bottom: 90px;
+
 }
